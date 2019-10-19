@@ -1888,7 +1888,6 @@ header {
   position: absolute;
   font-size: 35px;
   color: #2DCA73;
-  z-index: 9999999;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
