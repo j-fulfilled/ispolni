@@ -1905,7 +1905,7 @@ header {
 }
 
 .choose-document p {
-  color: #2DCA73;
+  color: #2DCA73 !important;
   text-align: center;
 }
 
