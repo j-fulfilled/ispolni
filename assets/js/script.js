@@ -18,6 +18,26 @@ $(document).ready(function () {
     })
     //  ================ -MOBILE-CLICK-JS-END- ================
 
+
+    //  ================ -SELECT-JS-START- ================
+    $(".user .header-user__select").on('click', function(){
+        $(".header-user__drop").fadeToggle()
+    })
+    $(".user-drop__company--title").on('click', function(){
+        $(".user-drop__company--list").toggle()
+    })
+
+  
+        $(".user-drop__company--items li").on('click', function(){
+            $(this).addClass('company-select__active').siblings().removeClass('company-select__active');
+        })
+
+
+    //  ================ -SELECT-JS-END- ================
+
+
+
+
     //  ================ -SELECT-JS-START- ================
     $('.my-select select').styler();
     //  ================ -SELECT-JS-END- ================

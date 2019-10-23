@@ -404,7 +404,7 @@ header {
   position: fixed;
   right: 25px;
   top: 20px;
-  z-index: 99999;
+  z-index: 999999;
   display: none;
 }
 
@@ -470,24 +470,169 @@ header {
   left: 0;
 }
 
-.body-fix .header-menu__block {
-  width: 230px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  -webkit-box-shadow: 0px 0px 8px #333;
-          box-shadow: 0px 0px 8px #333;
-}
-
 /*  MOBILE MENU STYLE END */
 .header-user {
-  min-width: 285px;
+  min-width: 312px;
   margin-left: auto;
+  padding-left: 24px;
+  padding-right: 8.4px;
+  position: relative;
 }
 
 .header-user__avatar {
   width: 40px;
   height: 40px;
   margin-right: 16px;
+}
+
+.header-user__drop {
+  width: 100%;
+  padding: 24px 32px 0 40px;
+  position: absolute;
+  top: 101%;
+  left: 0;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 15px rgba(138, 138, 138, 0.3);
+          box-shadow: 0px 8px 15px rgba(138, 138, 138, 0.3);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+}
+
+.header-user__drop .user-drop__info {
+  margin-bottom: 32px;
+}
+
+.header-user__drop .user-drop__info .user-drop__img {
+  width: 48px;
+  height: 48px;
+  margin-right: 14px;
+}
+
+.header-user__drop .user-drop__info .user-drop__name p a {
+  font-weight: normal;
+  font-size: 16px;
+  color: #4F4F4F;
+  margin-bottom: 5px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.header-user__drop .user-drop__info .user-drop__name .user-drop__phone {
+  font-weight: 500;
+  font-size: 13px;
+  color: #828282;
+  display: block;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.header-user__drop .user-drop__info .user-drop__name a:hover {
+  color: #2DCA73;
+}
+
+.header-user__drop .user-drop__settings a {
+  font-weight: normal;
+  font-size: 14px;
+  color: #4F4F4F;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.header-user__drop .user-drop__settings a:hover {
+  color: #2DCA73;
+}
+
+.header-user__drop .user-drop__company {
+  margin-top: 17px;
+}
+
+.header-user__drop .user-drop__company .user-drop__company--title {
+  margin-bottom: 13px;
+}
+
+.header-user__drop .user-drop__company .user-drop__company--title p {
+  font-weight: normal;
+  font-size: 14px;
+  color: #4F4F4F;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: relative;
+}
+
+.header-user__drop .user-drop__company .user-drop__company--title p:hover {
+  color: #2DCA73;
+}
+
+.header-user__drop .user-drop__company .user-drop__company--title p::before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  width: 7px;
+  height: 7px;
+  border-right: 1px solid #4F4F4F;
+  border-bottom: 1px solid #4F4F4F;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  margin-top: -3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.header-user__drop .user-drop__company .user-drop__company--title:hover p::before {
+  border-right: 1px solid #2DCA73;
+  border-bottom: 1px solid #2DCA73;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+
+.header-user__drop .user-drop__company .user-drop__company--list {
+  padding: 16px 32px 40px 40px;
+  background: rgba(111, 207, 151, 0.05);
+  margin: 0 -32px 0 -40px;
+  display: none;
+}
+
+.header-user__drop .user-drop__company .user-drop__company--list .user-drop__company--items li {
+  font-weight: normal;
+  font-size: 13px;
+  color: #4F4F4F;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.header-user__drop .user-drop__company .user-drop__company--list .user-drop__company--items li + li {
+  margin-top: 13px;
+}
+
+.header-user__drop .user-drop__company .user-drop__company--list .user-drop__company--items li:hover {
+  color: #2DCA73;
+}
+
+.header-user__drop .user-drop__company .user-drop__company--list .user-drop__company--items .company-select__active {
+  color: #2DCA73;
+}
+
+.header-user__drop .user-drop__company .user-drop__company--list .user-drop__company--btn {
+  margin-top: 29px;
+}
+
+.header-user__drop .user-drop__company .user-drop__company--list .user-drop__company--btn button {
+  width: 100%;
+  height: 48px;
+  display: block;
+  background-color: #2DCA73;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
 }
 
 .header-user__select {
@@ -512,10 +657,23 @@ header {
           justify-content: space-between;
 }
 
+.my-select .jq-selectbox__select:hover .jq-selectbox__trigger .jq-selectbox__trigger-arrow {
+  border-right: 2px solid #2DCA73;
+  border-bottom: 2px solid #2DCA73;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
 .my-select .jq-selectbox__select-text {
   font-weight: normal;
   font-size: 15px;
   color: #4F4F4F;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.my-select .jq-selectbox__select-text:hover {
+  color: #2DCA73;
 }
 
 .my-select .jq-selectbox__select .jq-selectbox__trigger {
@@ -534,6 +692,8 @@ header {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   margin-top: -3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .my-select .jq-selectbox__dropdown {
@@ -3233,13 +3393,14 @@ header {
 
 @media (max-width: 767.98px) {
   /*=======================-HEADER-MEDIA-max-width-767.98-START-=======================*/
-  .header-menu__block {
+  .header-menu {
     width: 0;
     height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 99;
+    z-index: 99999;
+    margin-left: 0;
     overflow-y: auto;
     background: white;
     -webkit-box-ordinal-group: 2;
@@ -3248,7 +3409,18 @@ header {
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
-  .header-menu {
+  .body-fix .header-menu {
+    width: 230px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-box-shadow: 0px 0px 8px #333;
+            box-shadow: 0px 0px 8px #333;
+  }
+  .header-menu__mobile {
+    display: block;
+  }
+  .header-menu__list {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -3258,15 +3430,6 @@ header {
     margin-left: 0;
     padding-left: 15px;
     padding-top: 20px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    z-index: 9999;
-  }
-  .header-menu__mobile {
-    display: block;
-  }
-  .header-menu__list {
-    display: block;
   }
   .menu .menu-list li + li {
     margin-left: 0;
@@ -3569,6 +3732,17 @@ header {
   .header-menu__mobile {
     top: 15px;
     right: 16px;
+  }
+  .header-user__drop {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    left: -18px;
+    padding: 24px 32px 0;
+  }
+  .header-user__drop .user-drop__company .user-drop__company--list {
+    padding: 16px 32px 40px 32px;
+    margin: 0 -32px 0 -32px;
   }
   /*========================-HEADER-MEDIA-max-width-575.98-END-========================*/
   .content {

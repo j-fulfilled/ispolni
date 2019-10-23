@@ -1,19 +1,31 @@
 @media (max-width: 767.98px) {
   /*=======================-HEADER-MEDIA-max-width-767.98-START-=======================*/
-  .header-menu__block {
+
+  .header-menu {
     width: 0;
     height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 99;
+    z-index: 99999;
+    margin-left: 0;
     overflow-y: auto;
     background: white;
     order: 1;
     transition: $transition-all;
   }
+  .body-fix .header-menu {
+    width: 230px;
+    transition: $transition-all;
+    box-shadow: 0px 0px 8px #333;
+}
+  .header-menu__mobile {
+    display: block;
+  }
 
-  .header-menu {
+  .header-menu__list {
+    display: block;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -23,17 +35,6 @@
     margin-left: 0;
     padding-left: 15px;
     padding-top: 20px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    z-index: 9999;
-  }
-
-  .header-menu__mobile {
-    display: block;
-  }
-
-  .header-menu__list {
-    display: block;
   }
 
   .menu .menu-list li + li {

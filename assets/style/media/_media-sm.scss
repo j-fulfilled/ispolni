@@ -44,6 +44,16 @@
     right: 16px;
   }
 
+  .header-user__drop{
+    width: max-content;
+    left: -18px;
+    padding: 24px 32px 0;
+  }
+  .header-user__drop .user-drop__company .user-drop__company--list{
+    padding: 16px 32px 40px 32px;
+    margin: 0 -32px 0 -32px;
+  }
+
   /*========================-HEADER-MEDIA-max-width-575.98-END-========================*/
 
   .content {
