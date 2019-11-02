@@ -377,4 +377,56 @@
 
   }
   /*=================== -PROJECT-INVESTMENT-max-width-1199.98-END- =================== */
+
+
+
+    /*================== -BALANCE-max-width-1199.98-START- ================== */
+    .balance-info .balance-info__block {
+      width: 50%;
+
+  }
+  .balance-info .balance-info__block .balance-info__box {
+    padding: 34px 15px 40px 15px;
+  }
+
+
+.balance-history{
+  padding: 34px 15px 0 15px;
+}
+.balance-history .balance-history__form .balance-history__form--info .balance-history__form--info__date .balance-history__form--info__date--box{
+  width: 50%;
+  input{
+    font-size: 13px;
+  }
+}
+.balance-history .balance-history__form .balance-history__form--info {
+  width: 100%;
+  flex-direction: column;
+  .jq-selectbox__select{
+    width: 100%;
+    .jq-selectbox__select-text{
+      width: 100%;
+    }
+  }
+  .balance-history__form--info__date{
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+.balance-history__form--btn{
+  width: 100%;
+  flex-direction: column;
+}
+.balance-history .balance-history__form .balance-history__form--btn button{
+  width: 100%;
+}
+.balance-history .balance-history__form .balance-history__form--btn button + button {
+margin-left: 0;
+margin-top: 20px;
+}
+
+.balance-history .balance-history__table{
+  margin: 0 -15px;
+}
+  /*=================== -BALANCE-max-width-1199.98-END- =================== */
 }

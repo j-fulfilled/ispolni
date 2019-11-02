@@ -276,4 +276,30 @@
     text-align: center;
   }
   /*======================== -INVESTMENT_CODE-max-width-575.98-END- ====================== */
+
+
+
+
+
+      /*================== -BALANCE-max-width-1199.98-START- ================== */
+      .balance-info {
+        margin: 0 -5.5px;
+    }
+      .balance-info .balance-info__block {
+        width: 100%;
+        padding: 5.5px;
+  
+    }
+    .balance-info .balance-info__block .balance-info__box .balance-info__box--sum p{
+      font-size: 24px;
+    }
+
+    .balance-history__form form{
+      flex-direction: column;
+    }
+    .balance-history .balance-history__form .balance-history__form--info{
+      padding-right: 0;
+      margin-bottom: 40px;
+    }
+    /*=================== -BALANCE-max-width-1199.98-END- =================== */
 }

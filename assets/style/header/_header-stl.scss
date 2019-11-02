@@ -318,39 +318,20 @@ header {
 
 
 
-.header-user__select {
+.my-select {
     position: relative;
 }
-
 .my-select select {
     display: none;
 }
 
-.my-select .jq-selectbox__select {
-    display: flex;
-    align-items: center;
-    padding: 20px 0;
-    cursor: pointer;
-    justify-content: space-between;
 
-    &:hover .jq-selectbox__trigger .jq-selectbox__trigger-arrow {
-        border-right: 2px solid $color-global;
-        border-bottom: 2px solid $color-global;
-        border-top: 2px solid transparent;
-        border-left: 2px solid transparent;
-    }
-}
 
-.my-select .jq-selectbox__select-text {
+.my-select  {
     font-weight: normal;
     font-size: 15px;
     color: $color-dark;
     transition: $transition-all;
-
-    &:hover {
-        color: $color-global;
-    }
-
 }
 
 .my-select .jq-selectbox__select .jq-selectbox__trigger {
@@ -370,7 +351,26 @@ header {
     margin-top: -3px;
     transition: $transition-all;
 }
+.my-select  .jq-selectbox__select {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    cursor: pointer;
+    justify-content: space-between;
 
+    &:hover .jq-selectbox__trigger .jq-selectbox__trigger-arrow {
+        border-right: 2px solid $color-global;
+        border-bottom: 2px solid $color-global;
+        border-top: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+    &:hover .jq-selectbox__select-text{
+        color: $color-global!important;
+    }
+}
+.jq-selectbox__select-text{
+    transition: $transition-all;
+}
 .my-select .jq-selectbox__dropdown {
     width: 100%;
     position: absolute;

@@ -199,6 +199,11 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+.bg-btn {
+  background-color: #2DCA73 !important;
+  color: white !important;
+}
+
 .bg-cover {
   background-position: center;
   background-repeat: no-repeat;
@@ -223,6 +228,7 @@ body {
 .page-title {
   font-weight: 500;
   font-size: 20px;
+  color: #4F4F4F;
 }
 
 /* width */
@@ -635,12 +641,40 @@ header {
   color: white;
 }
 
-.header-user__select {
+.my-select {
   position: relative;
 }
 
 .my-select select {
   display: none;
+}
+
+.my-select {
+  font-weight: normal;
+  font-size: 15px;
+  color: #4F4F4F;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.my-select .jq-selectbox__select .jq-selectbox__trigger {
+  width: 10px;
+  height: 10px;
+  margin-left: 23px;
+}
+
+.my-select .jq-selectbox__select .jq-selectbox__trigger .jq-selectbox__trigger-arrow {
+  width: 100%;
+  height: 100%;
+  border-right: 2px solid #4F4F4F;
+  border-bottom: 2px solid #4F4F4F;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: -3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .my-select .jq-selectbox__select {
@@ -664,34 +698,11 @@ header {
   border-left: 2px solid transparent;
 }
 
-.my-select .jq-selectbox__select-text {
-  font-weight: normal;
-  font-size: 15px;
-  color: #4F4F4F;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+.my-select .jq-selectbox__select:hover .jq-selectbox__select-text {
+  color: #2DCA73 !important;
 }
 
-.my-select .jq-selectbox__select-text:hover {
-  color: #2DCA73;
-}
-
-.my-select .jq-selectbox__select .jq-selectbox__trigger {
-  width: 10px;
-  height: 10px;
-  margin-left: 23px;
-}
-
-.my-select .jq-selectbox__select .jq-selectbox__trigger .jq-selectbox__trigger-arrow {
-  width: 100%;
-  height: 100%;
-  border-right: 2px solid #4F4F4F;
-  border-bottom: 2px solid #4F4F4F;
-  border-top: 2px solid transparent;
-  border-left: 2px solid transparent;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  margin-top: -3px;
+.jq-selectbox__select-text {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -1061,13 +1072,13 @@ header {
   margin: 8px 0 19px;
 }
 
-.investor-projects__info p {
+.investor-info .investor-name .investor-projects__info p {
   color: #BDBDBD;
   font-weight: 500;
   font-size: 13px;
 }
 
-.investor-projects__info span {
+.investor-info .investor-name .investor-projects__info span {
   color: #4F4F4F;
   margin: 0 3px;
 }
@@ -1181,10 +1192,14 @@ header {
   margin-top: 8px;
 }
 
+.block-bg__change .confirm-svg {
+  background-color: #b5ecce;
+}
+
 .confirm-svg {
   width: 32px;
   height: 32px;
-  background-color: #b5ecce;
+  background-color: #F3F3F3;
   border-radius: 50%;
   margin-left: 12px;
   -webkit-transition: 0.4s;
@@ -2336,6 +2351,216 @@ header {
   margin-top: 10px;
 }
 
+.title-cost__info--balance .page-title {
+  margin-bottom: 13.5px;
+}
+
+.balance-info {
+  margin: 0 -12.5px;
+}
+
+.balance-info .balance-info__block {
+  width: 33.333%;
+  padding: 12.5px;
+}
+
+.balance-info .balance-info__block .balance-info__box {
+  padding: 34px 24px 40px 24px;
+  background-color: white;
+  border: 1px solid #F2F2F7;
+  border-radius: 8px;
+}
+
+.balance-info .balance-info__block .balance-info__box .balance-info__box--title {
+  margin-bottom: 22px;
+}
+
+.balance-info .balance-info__block .balance-info__box .balance-info__box--title p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #4F4F4F;
+  margin-bottom: 7px;
+}
+
+.balance-info .balance-info__block .balance-info__box .balance-info__box--title span {
+  font-weight: 500;
+  font-size: 14px;
+  color: #808080;
+  display: block;
+}
+
+.balance-info .balance-info__block .balance-info__box .balance-info__box--sum {
+  margin-bottom: 24px;
+}
+
+.balance-info .balance-info__block .balance-info__box .balance-info__box--sum p {
+  font-weight: 500;
+  font-size: 32px;
+  color: #4F4F4F;
+}
+
+.balance-info .balance-info__block .balance-info__box .balance-info__box--sum p:nth-child(2) {
+  margin-top: 10px;
+  margin-bottom: 32px;
+  color: #2DCA73;
+}
+
+.balance-info .balance-info__block .balance-info__box .balance-info__box--btn a {
+  height: 48px;
+  color: #2DCA73;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  border: 1px solid #2DCA73;
+}
+
+.balance-info .balance-info__block .balance-info__box .balance-info__box--btn a + a {
+  margin-top: 8px;
+}
+
+.balance-history {
+  margin-top: 27.5px;
+  border: 1px solid #F2F2F7;
+  border-radius: 8px;
+  padding-top: 34px;
+  background-color: white;
+  padding: 34px 23px 0 23px;
+  overflow: hidden;
+}
+
+.balance-history .balance-history__title {
+  margin-bottom: 21.5px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #4F4F4F;
+}
+
+.balance-history .balance-history__form {
+  margin-bottom: 35.25px;
+}
+
+.balance-history .balance-history__form .balance-history__form--info {
+  padding-right: 10px;
+}
+
+.balance-history .balance-history__form .balance-history__form--info .balance-history__form--info__date {
+  margin-right: 32px;
+}
+
+.balance-history .balance-history__form .balance-history__form--info .balance-history__form--info__date .balance-history__form--info__date--box {
+  width: 143px;
+  height: 40px;
+}
+
+.balance-history .balance-history__form .balance-history__form--info .balance-history__form--info__date .balance-history__form--info__date--box + .balance-history__form--info__date--box {
+  margin-left: 16px;
+}
+
+.balance-history .balance-history__form .balance-history__form--info .balance-history__form--info__date .balance-history__form--info__date--box input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #4F4F4F;
+}
+
+.balance-history .balance-history__form .balance-history__form--info .balance-history__form--info__date .balance-history__form--info__date--box input::-webkit-input-placeholder {
+  color: #BDBDBD;
+  font-weight: normal;
+}
+
+.balance-history .balance-history__form .balance-history__form--info .balance-history__form--info__date .balance-history__form--info__date--box input:-ms-input-placeholder {
+  color: #BDBDBD;
+  font-weight: normal;
+}
+
+.balance-history .balance-history__form .balance-history__form--info .balance-history__form--info__date .balance-history__form--info__date--box input::-ms-input-placeholder {
+  color: #BDBDBD;
+  font-weight: normal;
+}
+
+.balance-history .balance-history__form .balance-history__form--info .balance-history__form--info__date .balance-history__form--info__date--box input::placeholder {
+  color: #BDBDBD;
+  font-weight: normal;
+}
+
+.balance-history .balance-history__form .balance-history__form--info .jq-selectbox__select {
+  width: 240px;
+  height: 40px;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  padding: 0 16px;
+}
+
+.balance-history .balance-history__form .balance-history__form--info .jq-selectbox__select .jq-selectbox__select-text {
+  color: #808080;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.balance-history .balance-history__form .balance-history__form--btn button {
+  width: 180px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 15px;
+  border: 1px solid #2DCA73;
+  color: #2DCA73;
+}
+
+.balance-history .balance-history__form .balance-history__form--btn button + button {
+  margin-left: 16px;
+}
+
+.balance-history .balance-history__table {
+  overflow-y: hidden;
+  overflow-x: auto;
+  margin: 0 -23px;
+}
+
+.balance-history .balance-history__table .balance-history__table--box {
+  width: 1086px;
+}
+
+.balance-history .balance-history__table .balance-history__table--box table thead tr {
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.balance-history .balance-history__table .balance-history__table--box table thead tr td {
+  padding-bottom: 13.25px;
+  padding-left: 23px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #BBBBBB;
+  line-height: 20px;
+}
+
+.balance-history .balance-history__table .balance-history__table--box table thead tr td span {
+  color: #2DCA73;
+}
+
+.balance-history .balance-history__table .balance-history__table--box table tbody tr + tr {
+  border-top: 1px solid #E0E0E0;
+}
+
+.balance-history .balance-history__table .balance-history__table--box table tbody tr td {
+  padding-top: 8.5px;
+  padding-bottom: 11px;
+  padding-left: 23px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #4F4F4F;
+  line-height: 20px;
+}
+
+.balance-history .balance-history__table .balance-history__table--box table tbody tr td span {
+  color: #2DCA73;
+}
+
 .data-block {
   max-width: 696px;
   width: 100%;
@@ -2987,13 +3212,6 @@ header {
   color: #BDBDBD;
 }
 
-.data-inputs__box .my-select .jq-selectbox__select .jq-selectbox__trigger .jq-selectbox__trigger-arrow {
-  border-right: 2px solid #828282;
-  border-bottom: 2px solid #828282;
-  border-top: 2px solid transparent;
-  border-left: 2px solid transparent;
-}
-
 @media (max-width: 1366px) {
   /*=======================-HEADER-MEDIA-max-width-1366-START-=======================*/
   .logo.logo-mob {
@@ -3054,6 +3272,12 @@ header {
     width: unset;
   }
   /*========================== -BORROWERS-max-width-1366-END- ======================= */
+  /*================== -BALANCE-max-width-1199.98-START- ================== */
+  .balance-history .balance-history__form .balance-history__form--info .jq-selectbox__select {
+    width: 180px;
+    padding: 0 14px;
+  }
+  /*=================== -BALANCE-max-width-1199.98-END- =================== */
 }
 
 @media (max-width: 1199.98px) {
@@ -3389,6 +3613,57 @@ header {
     margin-top: 15px;
   }
   /*=================== -PROJECT-INVESTMENT-max-width-1199.98-END- =================== */
+  /*================== -BALANCE-max-width-1199.98-START- ================== */
+  .balance-info .balance-info__block {
+    width: 50%;
+  }
+  .balance-info .balance-info__block .balance-info__box {
+    padding: 34px 15px 40px 15px;
+  }
+  .balance-history {
+    padding: 34px 15px 0 15px;
+  }
+  .balance-history .balance-history__form .balance-history__form--info .balance-history__form--info__date .balance-history__form--info__date--box {
+    width: 50%;
+  }
+  .balance-history .balance-history__form .balance-history__form--info .balance-history__form--info__date .balance-history__form--info__date--box input {
+    font-size: 13px;
+  }
+  .balance-history .balance-history__form .balance-history__form--info {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .balance-history .balance-history__form .balance-history__form--info .jq-selectbox__select {
+    width: 100%;
+  }
+  .balance-history .balance-history__form .balance-history__form--info .jq-selectbox__select .jq-selectbox__select-text {
+    width: 100%;
+  }
+  .balance-history .balance-history__form .balance-history__form--info .balance-history__form--info__date {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .balance-history__form--btn {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .balance-history .balance-history__form .balance-history__form--btn button {
+    width: 100%;
+  }
+  .balance-history .balance-history__form .balance-history__form--btn button + button {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .balance-history .balance-history__table {
+    margin: 0 -15px;
+  }
+  /*=================== -BALANCE-max-width-1199.98-END- =================== */
 }
 
 @media (max-width: 767.98px) {
@@ -3958,5 +4233,27 @@ header {
     text-align: center;
   }
   /*======================== -INVESTMENT_CODE-max-width-575.98-END- ====================== */
+  /*================== -BALANCE-max-width-1199.98-START- ================== */
+  .balance-info {
+    margin: 0 -5.5px;
+  }
+  .balance-info .balance-info__block {
+    width: 100%;
+    padding: 5.5px;
+  }
+  .balance-info .balance-info__block .balance-info__box .balance-info__box--sum p {
+    font-size: 24px;
+  }
+  .balance-history__form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .balance-history .balance-history__form .balance-history__form--info {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  /*=================== -BALANCE-max-width-1199.98-END- =================== */
 }
 /*# sourceMappingURL=style.css.map */

@@ -36,6 +36,11 @@
     transition: all 0.5s ease-in-out;
 }
 
+.bg-btn{
+    background-color: $color-global!important;
+    color: white!important;
+}
+
 .bg-cover {
     background-position: center;
     background-repeat: no-repeat;
@@ -58,6 +63,7 @@
 }
 .page-title{
     @include fontStyle(20px);
+    color: $color-dark;
 }
 
 /* width */
