@@ -2365,6 +2365,7 @@ header {
 }
 
 .balance-info .balance-info__block .balance-info__box {
+  height: 100%;
   padding: 34px 24px 40px 24px;
   background-color: white;
   border: 1px solid #F2F2F7;
@@ -2389,19 +2390,22 @@ header {
   display: block;
 }
 
-.balance-info .balance-info__block .balance-info__box .balance-info__box--sum {
+.balance-info .balance-info__block .balance-info__box .balance-info__box--sum__block {
+  height: 70%;
+}
+
+.balance-info .balance-info__block .balance-info__box .balance-info__box--sum__block .balance-info__box--sum {
   margin-bottom: 24px;
 }
 
-.balance-info .balance-info__block .balance-info__box .balance-info__box--sum p {
+.balance-info .balance-info__block .balance-info__box .balance-info__box--sum__block .balance-info__box--sum p {
   font-weight: 500;
   font-size: 32px;
   color: #4F4F4F;
 }
 
-.balance-info .balance-info__block .balance-info__box .balance-info__box--sum p:nth-child(2) {
+.balance-info .balance-info__block .balance-info__box .balance-info__box--sum__block .balance-info__box--sum p:nth-child(2) {
   margin-top: 10px;
-  margin-bottom: 32px;
   color: #2DCA73;
 }
 
