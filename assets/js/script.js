@@ -20,17 +20,17 @@ $(document).ready(function () {
 
 
     //  ================ -SELECT-JS-START- ================
-    $(".user .header-user__select").on('click', function(){
+    $(".user .header-user__select").on('click', function () {
         $(".header-user__drop").fadeToggle()
     })
-    $(".user-drop__company--title").on('click', function(){
+    $(".user-drop__company--title").on('click', function () {
         $(".user-drop__company--list").toggle()
     })
 
-  
-        $(".user-drop__company--items li").on('click', function(){
-            $(this).addClass('company-select__active').siblings().removeClass('company-select__active');
-        })
+
+    $(".user-drop__company--items li").on('click', function () {
+        $(this).addClass('company-select__active').siblings().removeClass('company-select__active');
+    })
 
 
     //  ================ -SELECT-JS-END- ================
@@ -255,7 +255,6 @@ $(document).ready(function () {
             })
         }
     }
-    // let parent_all = $(".content-about__links--fu").parent().attr('class');
 
     $(".filter-linksFuC ul li").on('click', function () {
         changeMenuBlock(this, 'clicle-svg', 'filter-linksFuC ul li')
@@ -310,7 +309,7 @@ $(document).ready(function () {
 
 
 
-    // for add file
+    //  ================ -ADD FILE .pdf-JS-START- ================
 
     $('.basket-files-hidden').on('change', function () {
         var prt = $(this).parents('.formula-for-file');
@@ -419,13 +418,17 @@ $(document).ready(function () {
         }
     })
 
+    //  ================ -ADD FILE .pdf-JS-END- ================
 
+
+
+    //  ================ -ADD FILE .video-JS-START- ================
 
     $('.basket-files-hidden-v').on('change', function () {
         var prt = $(this).parents('.formula-for-file-v');
         var filename = $(prt).find('.basket-files-hidden-v');
         var cloner = $(filename).clone();
-        
+
         if ($(filename)[0].files[0] != undefined) {
             varfile_val = $(prt).find('input[type=file]').val();
             var file_block = $(prt).find('.insert-file-v');
@@ -448,7 +451,7 @@ $(document).ready(function () {
                 '<div class="company-document__video">' +
                 '<div class="single-video__block" >' +
                 '<div class="video-box">' +
-                '<video poster="./assets/img/video/poster/poster.jpg" class="video" src="'+ file_url +'" type="video/mp4" src="'+ file_url +'"></video>' +
+                '<video poster="./assets/img/video/poster/poster.jpg" class="video" src="' + file_url + '" type="video/mp4" src="' + file_url + '"></video>' +
                 '<div class="video-play__bg">' +
                 '<span class="video-play__icon"></span>' +
                 '</div>' +
@@ -493,17 +496,84 @@ $(document).ready(function () {
             prt.remove();
         }
     })
-})
 
-$('.video-play__bg').click(function () {
-    var this_prt = $(this).parent()
-    var parent_video = $(this_prt)
-    var icon_video = $(parent_video).find(".video-play__bg")
-    var video = $(parent_video).find(".video")
-    $(video).trigger('play')
-    $(video).attr("controls", "controls")
-    $(icon_video).fadeOut()
-});
+
+    $('.video-play__bg').click(function () {
+        var this_prt = $(this).parent()
+        var parent_video = $(this_prt)
+        var icon_video = $(parent_video).find(".video-play__bg")
+        var video = $(parent_video).find(".video")
+        $(video).trigger('play')
+        $(video).attr("controls", "controls")
+        $(icon_video).fadeOut()
+    });
+
+
+    //  ================ -ADD FILE .video-JS-END- ================
+
+
+
+
+
+
+
+    //  ================ -NEWS PAGE-JS-START- ================
+
+
+    $('.news-info__box--text').each(function () {
+        var this_p = $(this).children('p');
+        var this_span = $(this).children('span')
+        if ($(this_p).text().length > 350) {
+            var this_prt = $(this).parent();
+            $(this_p).css({
+                height: '90px',
+            })
+            $(this_span).css({
+                display: 'block',
+            })
+            var expend = $(this_prt).find('.expand');
+            $(expend).css({
+                display: 'block'
+            })
+        }
+    })
+   
+
+    $('.expand').on('click', function () {
+        var this_data = $(this).attr('data-expand');
+        var this_prt = $(this).parent();
+        var this_block = $(this_prt).find('.news-info__box--text p');
+        var this_sp = $(this_prt).find('.news-info__box--text span');
+        if (this_data === 'false') {
+            // $(this_block).css({
+            //     height: '100%'
+            // })
+            this_block.data('oHeight',this_block.height()).css('height','auto').data('nHeight',this_block.height()).height(this_block.data('oHeight')).animate({height: this_block.data('nHeight')},400);
+
+            $(this_sp).css({
+                display: 'none'
+            })
+            $(this).attr('data-expand', 'true')
+            $(this).text('Свернуть')
+        } 
+        else {
+            // $(this_block).css({
+            //     height: '90px'
+            // })
+            this_block.data('oHeight',this_block.height()).css('height','90').data('nHeight',this_block.height()).height(this_block.data('oHeight')).animate({height: this_block.data('nHeight')},400);
+            $(this_sp).css({
+                display: 'block'
+            })
+            $(this).attr('data-expand', 'false')
+            $(this).text('Развернуть')
+        }
+    })
+
+    //  ================ -NEWS PAGE-JS-END- ================
+
+
+
+})
 
 
 
@@ -529,11 +599,3 @@ function myFunction() {
         }
     }
 }
-
-
-
-
-
-
-
-

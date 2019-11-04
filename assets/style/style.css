@@ -2565,6 +2565,77 @@ header {
   color: #2DCA73;
 }
 
+.title-cost__info--news .page-title {
+  margin-bottom: 24px;
+}
+
+.news-info {
+  margin: 0 -12px;
+}
+
+.news-info .news-info__block {
+  width: 50%;
+  padding: 12px;
+}
+
+.news-info .news-info__block .news-info__box {
+  padding: 22px 24px 35px 24px;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 32px rgba(138, 138, 138, 0.1);
+          box-shadow: 0px 4px 32px rgba(138, 138, 138, 0.1);
+  border-radius: 8px;
+}
+
+.news-info .news-info__block .news-info__box .news-info__box--date {
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 13px;
+  color: #BDBDBD;
+}
+
+.news-info .news-info__block .news-info__box .news-info__box--title {
+  margin-bottom: 18px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #4F4F4F;
+}
+
+.news-info .news-info__block .news-info__box .news-info__box--text__block {
+  min-height: 132px;
+}
+
+.news-info .news-info__block .news-info__box .news-info__box--text__block .news-info__box--text {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.news-info .news-info__block .news-info__box .news-info__box--text__block .news-info__box--text p {
+  font-size: 15px;
+  font-weight: normal;
+  color: #828282;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+.news-info .news-info__block .news-info__box .news-info__box--text__block .news-info__box--text span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+  display: none;
+}
+
+.news-info .news-info__block .news-info__box .news-info__box--text__block .news-info__box--expand {
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  color: #2DCA73;
+  display: none;
+}
+
 .data-block {
   max-width: 696px;
   width: 100%;
@@ -3973,6 +4044,18 @@ header {
     margin-bottom: 15px;
   }
   /*=================== -PROJECT-INVESTMENT-max-width-767.98-END- =================== */
+  /*=================== - NEWS-max-width-767.98-START- =================== */
+  .news-info {
+    margin: 0 -5px;
+  }
+  .news-info .news-info__block {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .news-info .news-info__block .news-info__box {
+    padding: 22px 15px 35px 15px;
+  }
+  /*=================== - NEWS-max-width-767.98-END- =================== */
 }
 
 @media (max-width: 575.98px) {
