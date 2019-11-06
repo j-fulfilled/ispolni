@@ -79,3 +79,8 @@
 .scrollbar::-webkit-scrollbar-thumb {
   background: $color-global; 
 }
+
+::selection{
+    background-color: $color-global;
+    color: white;
+}

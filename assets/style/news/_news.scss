@@ -33,7 +33,6 @@
                 min-height: 132px;
 
                 .news-info__box--text {
-                    margin-bottom: 24px;
                     position: relative;
                     p{
                         font-size: 15px;
@@ -58,6 +57,8 @@
                     @include fontStyle(15px);
                     color: $color-global;
                     display: none;
+                    margin-top: 24px;
+
                 }
             }
 

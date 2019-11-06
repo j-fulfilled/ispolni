@@ -248,6 +248,16 @@ body {
   background: #2DCA73;
 }
 
+::-moz-selection {
+  background-color: #2DCA73;
+  color: white;
+}
+
+::selection {
+  background-color: #2DCA73;
+  color: white;
+}
+
 .d_flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2605,7 +2615,6 @@ header {
 }
 
 .news-info .news-info__block .news-info__box .news-info__box--text__block .news-info__box--text {
-  margin-bottom: 24px;
   position: relative;
 }
 
@@ -2634,6 +2643,7 @@ header {
   font-size: 15px;
   color: #2DCA73;
   display: none;
+  margin-top: 24px;
 }
 
 .data-block {
@@ -4055,6 +4065,9 @@ header {
   .news-info .news-info__block .news-info__box {
     padding: 22px 15px 35px 15px;
   }
+  .news-info .news-info__block .news-info__box .news-info__box--text__block {
+    min-height: auto;
+  }
   /*=================== - NEWS-max-width-767.98-END- =================== */
 }
 
@@ -4265,6 +4278,10 @@ header {
   .videos-info__block .video-block p,
   .company-document__main .single-info__block--big .single-info__block p {
     text-align: center;
+  }
+  .single-video__block .video-box:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   /*======================== -DOCUMENTS-max-width-575.98-END- ====================== */
   /*======================= -BORROWERS-max-width-575.98-START- ===================== */

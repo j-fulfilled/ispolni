@@ -528,13 +528,9 @@ $(document).ready(function () {
             $(this_p).css({
                 height: '90px',
             })
-            $(this_span).css({
-                display: 'block',
-            })
+            $(this_span).fadeIn();
             var expend = $(this_prt).find('.expand');
-            $(expend).css({
-                display: 'block'
-            })
+            $(expend).fadeIn();
         }
     })
    
@@ -545,25 +541,14 @@ $(document).ready(function () {
         var this_block = $(this_prt).find('.news-info__box--text p');
         var this_sp = $(this_prt).find('.news-info__box--text span');
         if (this_data === 'false') {
-            // $(this_block).css({
-            //     height: '100%'
-            // })
             this_block.data('oHeight',this_block.height()).css('height','auto').data('nHeight',this_block.height()).height(this_block.data('oHeight')).animate({height: this_block.data('nHeight')},400);
-
-            $(this_sp).css({
-                display: 'none'
-            })
+            $(this_sp).fadeOut();
             $(this).attr('data-expand', 'true')
             $(this).text('Свернуть')
         } 
         else {
-            // $(this_block).css({
-            //     height: '90px'
-            // })
             this_block.data('oHeight',this_block.height()).css('height','90').data('nHeight',this_block.height()).height(this_block.data('oHeight')).animate({height: this_block.data('nHeight')},400);
-            $(this_sp).css({
-                display: 'block'
-            })
+            $(this_sp).fadeIn();
             $(this).attr('data-expand', 'false')
             $(this).text('Развернуть')
         }
