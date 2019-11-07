@@ -138,7 +138,6 @@
   .projects-same__info {
     table {
       td {
-        display: block;
 
         &:first-child {
           padding-bottom: 5px;
@@ -250,19 +249,12 @@
     width: 100%;
     margin: 0 0 10px;
     td {
-      display: block;
       &:last-child {
         text-align: left;
       }
     }
   }
-  .cost-investment__info--block .projects-same__info table {
-    width: 100%;
-    margin: 0;
-  }
-  .cost-investment__info--block .projects-same__info tr td:first-child {
-    display: flex;
-  }
+
 
   /*======================== -BORROWERS-max-width-575.98-END- ====================== */
 

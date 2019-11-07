@@ -1662,7 +1662,6 @@ header {
   font-weight: 500;
   font-size: 15px;
   color: #bbbbbb;
-  width: 200px;
 }
 
 .projects-same__info tr td .query {
@@ -2646,6 +2645,99 @@ header {
   margin-top: 24px;
 }
 
+.new-request__text {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.new-request__inputs {
+  margin-top: 42.57px;
+  margin-bottom: 25px;
+}
+
+.new-request__inputs .curent-ps {
+  border: 1px solid #BDBDBD;
+}
+
+.new-request__protection {
+  background: #F4FDF8;
+  border: 1px solid #C5FADC;
+  border-radius: 8px;
+  padding-top: 23.5px;
+  padding-bottom: 18px;
+}
+
+.new-request__protection .steps-box__btn--check {
+  display: block;
+  padding: 0;
+  padding-left: 11px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #4F4F4F;
+}
+
+.new-request__protection .steps-box__btn--check span {
+  margin-right: 10px;
+}
+
+.new-request__protection .new-request__text {
+  margin-top: 15.5px;
+  padding-left: 44px;
+  padding-right: 38.11px;
+}
+
+.new-request__decor--table {
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.new-request__decor--table tr td:last-child {
+  text-align: right;
+}
+
+.new-request__decor--info {
+  margin-top: 23px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.new-request__decor--info p {
+  color: #808080;
+}
+
+.new-request__decor--info span {
+  color: #2DCA73;
+}
+
+.new-request__decor--info-view {
+  margin-top: 68px;
+  text-align: center;
+}
+
+.new-request__decor--info-view a {
+  font-weight: normal;
+  font-size: 14px;
+  color: #2DCA73;
+}
+
+.new-request__decor .steps-box__btn {
+  padding: 0;
+  text-align: left;
+}
+
+.new-request__decor .steps-box__btn .steps-box__btn--check {
+  display: block;
+  padding: 0;
+  margin-bottom: 32.5px;
+}
+
+.new-request__decor .steps-box__btn button {
+  width: 100%;
+  height: 48px;
+  display: block;
+}
+
 .data-block {
   max-width: 696px;
   width: 100%;
@@ -3177,47 +3269,6 @@ header {
   padding: 0 10px;
 }
 
-.steps-box__btn .steps-box__btn--check {
-  display: table;
-  margin: auto;
-  padding: 16px;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 1.5;
-}
-
-.steps-box__btn .steps-box__btn--check span {
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: sub;
-  margin-right: 5px;
-  border-radius: 2px;
-  background-color: #F2F2F2;
-  position: relative;
-}
-
-.steps-box__btn .steps-box__btn--check input {
-  display: none;
-}
-
-.steps-box__btn .steps-box__btn--check input:checked + span {
-  background-color: #2DCA73;
-}
-
-.steps-box__btn .steps-box__btn--check input:checked + span:before {
-  content: "";
-  width: 6px;
-  height: 11px;
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
-  position: absolute;
-  top: 2px;
-  left: 6px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
 .steps-box__btn button {
   width: 180px;
   height: 40px;
@@ -3238,6 +3289,47 @@ header {
 
 .steps-box__btn p span {
   color: #2DCA73;
+}
+
+.steps-box__btn--check {
+  display: table;
+  margin: auto;
+  padding: 16px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.steps-box__btn--check span {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: sub;
+  margin-right: 5px;
+  border-radius: 2px;
+  background-color: #F2F2F2;
+  position: relative;
+}
+
+.steps-box__btn--check input {
+  display: none;
+}
+
+.steps-box__btn--check input:checked + span {
+  background-color: #2DCA73;
+}
+
+.steps-box__btn--check input:checked + span:before {
+  content: "";
+  width: 6px;
+  height: 11px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .data-inputs__box p {
@@ -3352,11 +3444,6 @@ header {
     width: 20%;
   }
   /*========================== -DOCUMENTS-max-width-1366-END- ======================= */
-  /*========================= -BORROWERS-max-width-1366-START- ====================== */
-  .cost-investment__info--block .projects-same__info tr td:first-child {
-    width: unset;
-  }
-  /*========================== -BORROWERS-max-width-1366-END- ======================= */
   /*================== -BALANCE-max-width-1199.98-START- ================== */
   .balance-history .balance-history__form .balance-history__form--info .jq-selectbox__select {
     width: 180px;
@@ -3672,11 +3759,7 @@ header {
   .security-block {
     text-align: center;
   }
-  .cost-investment__info--block .projects-same__info table {
-    margin: 0 auto;
-    width: 460px;
-  }
-  .cost-investment__info--block .projects-same__info tr td {
+  .cost-investment__info--block .projects-same__info table tr td {
     font-size: 14px;
   }
   .contracts-history table {
@@ -4204,9 +4287,6 @@ header {
   .projects-parameters__block {
     padding: 20px 15px;
   }
-  .projects-same__info table td {
-    display: block;
-  }
   .projects-same__info table td:first-child {
     padding-bottom: 5px;
   }
@@ -4309,20 +4389,8 @@ header {
     width: 100%;
     margin: 0 0 10px;
   }
-  .contracts-history table td {
-    display: block;
-  }
   .contracts-history table td:last-child {
     text-align: left;
-  }
-  .cost-investment__info--block .projects-same__info table {
-    width: 100%;
-    margin: 0;
-  }
-  .cost-investment__info--block .projects-same__info tr td:first-child {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   /*======================== -BORROWERS-max-width-575.98-END- ====================== */
   /*======================== -INVESTMENT_CODE-max-width-575.98-START- ====================== */

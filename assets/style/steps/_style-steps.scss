@@ -136,45 +136,7 @@
     margin-top: 50px;
     text-align: center;
     padding: 0 10px;
-    .steps-box__btn--check {
-        display: table;
-        margin: auto;
-        padding: 16px;
-        font-size: 13px;
-        font-weight: normal;
-        line-height: 1.5;
 
-        span {
-            width: 18px;
-            height: 18px;
-            display: inline-block;
-            vertical-align: sub;
-            margin-right: 5px;
-            border-radius: 2px;
-            background-color: #F2F2F2;
-            position: relative;
-        }
-
-        input {
-            display: none;
-
-            &:checked+span {
-                background-color: $color-global;
-            }
-
-            &:checked+span:before {
-                content: "";
-                width: 6px;
-                height: 11px;
-                border-right: 2px solid white;
-                border-bottom: 2px solid white;
-                position: absolute;
-                top: 2px;
-                left: 6px;
-                transform: rotate(45deg);
-            }
-        }
-    }
     button{
         width: 180px;
         height: 40px;
@@ -196,6 +158,46 @@
     }
 }
 
+
+.steps-box__btn--check {
+    display: table;
+    margin: auto;
+    padding: 16px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.5;
+
+    span {
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        vertical-align: sub;
+        margin-right: 5px;
+        border-radius: 2px;
+        background-color: #F2F2F2;
+        position: relative;
+    }
+
+    input {
+        display: none;
+
+        &:checked+span {
+            background-color: $color-global;
+        }
+
+        &:checked+span:before {
+            content: "";
+            width: 6px;
+            height: 11px;
+            border-right: 2px solid white;
+            border-bottom: 2px solid white;
+            position: absolute;
+            top: 2px;
+            left: 6px;
+            transform: rotate(45deg);
+        }
+    }
+}
 
 // inputs style
 

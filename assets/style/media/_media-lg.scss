@@ -350,12 +350,11 @@
       
     table {
       
-      margin: 0 auto;
-      width: 460px;
+      tr td {
+        font-size: 14px;
+        }
   }
-   tr td {
-    font-size: 14px;
-    }
+   
   }
 }
     .contracts-history table {
