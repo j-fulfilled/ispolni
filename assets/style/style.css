@@ -2738,6 +2738,28 @@ header {
   display: block;
 }
 
+.requisites-link__download {
+  width: 298px;
+  height: 48px;
+}
+
+.requisites-link__download a {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  padding: 0 17.75px;
+  border-radius: 8px;
+  background-color: #2DCA73;
+}
+
+.requisites-link__download a svg {
+  width: 16.5px;
+  height: 17.42px;
+  fill: white;
+}
+
 .data-block {
   max-width: 696px;
   width: 100%;
