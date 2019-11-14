@@ -217,8 +217,6 @@ $(document).ready(function () {
     //  ================ -FILTER-BLOCK-JS-START- ================
 
 
-
-
     function changeMenuBlock($this, parent_block, parent_menu_link) {
         let parent = $('.' + parent_block)
         let parent_menu = $(parent).find('.' + parent_menu_link)
@@ -552,10 +550,33 @@ $(document).ready(function () {
             $(this).attr('data-expand', 'false')
             $(this).text('Развернуть')
         }
+        
     })
 
     //  ================ -NEWS PAGE-JS-END- ================
+    //  ================ -PROFILE-JS-START- ================
+    $('.expand').on('click',function()
+        {
+            var this_data = $(this).attr('data-expand');
+            var this_prt = $(this).parent();
+            var this_child = $(this_prt).children('.company-info__show--content');
+            if (this_data === 'true') {
+                this_child.data('oHeight',this_child.height()).css('height','auto').data('nHeight',this_child.height()).height(this_child.data('oHeight')).animate({height: this_child.data('nHeight')},400);
+                $(this).text('Свернуть')
 
+            } 
+            else {
+                this_child.data('oHeight',this_child.height()).css('height','254').data('nHeight',this_child.height()).height(this_child.data('oHeight')).animate({height: this_child.data('nHeight')},400);
+                $(this).text('Развернуть')
+
+            }
+            
+        }
+    )
+
+    //  ================= -PROFILE-JS-END- =================
+
+})
 
 // STEPS third-step search
 function myFunction() {
@@ -573,6 +594,9 @@ function myFunction() {
         }
     }
 }
-})
+
+
+
+
 
 

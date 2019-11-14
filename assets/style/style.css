@@ -2998,11 +2998,17 @@ header {
   top: 0;
 }
 
+.company-info__show--content {
+  height: 254px;
+  overflow: hidden;
+}
+
 .all-info__scroll {
   color: #2dca73;
   font-weight: 500;
   font-size: 14px;
   text-align: center;
+  margin-top: 27px;
 }
 
 .data-block {
