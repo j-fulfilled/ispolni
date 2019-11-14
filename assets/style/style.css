@@ -2881,6 +2881,8 @@ header {
 
 .profile-info .company-info__main .single-video__block .download-documents {
   margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .personal-info__table {
@@ -2894,7 +2896,7 @@ header {
 
 .personal-info__table table tr td {
   font-size: 13px;
-  color: #4f4f4f;
+  color: #4F4F4F;
   padding: 7.5px 0;
 }
 
@@ -2941,7 +2943,7 @@ header {
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
-  color: #4f4f4f;
+  color: #4F4F4F;
 }
 
 .personal-info__title span {
@@ -2949,11 +2951,19 @@ header {
   height: 32px;
   background-color: rgba(189, 189, 189, 0.2);
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.personal-info__title span:hover svg {
+  fill: #2DCA73;
 }
 
 .personal-info__title span svg {
   width: 15px;
   height: 15px;
+  fill: #4F4F4F;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .video__img--download {
@@ -2965,7 +2975,7 @@ header {
 }
 
 .video__img--download .choose-document p {
-  color: #4f4f4f !important;
+  color: #4F4F4F !important;
 }
 
 .video__img--download .choose-document .download-documents {
@@ -2983,14 +2993,14 @@ header {
 }
 
 .video__img--download .choose-file__input span {
-  color: #4f4f4f;
+  color: #4F4F4F;
 }
 
 .company-document__download a {
   font-weight: normal;
   font-size: 13px;
   line-height: 17px;
-  color: #4f4f4f;
+  color: #4F4F4F;
   padding-left: 25px;
   position: relative;
   margin-bottom: 15px;
@@ -3011,11 +3021,12 @@ header {
 }
 
 .all-info__scroll {
-  color: #2dca73;
+  color: #2DCA73;
   font-weight: 500;
   font-size: 14px;
   text-align: center;
   margin-top: 27px;
+  cursor: pointer;
 }
 
 .data-block {

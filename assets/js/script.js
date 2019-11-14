@@ -445,21 +445,21 @@ $(document).ready(function () {
 
             cloner.attr('class', 'gid-file')
 
-            // $(file_block).append('<div class="files-box video-block">' +
-            //     '<div class="company-document__video">' +
-            //     '<div class="single-video__block" >' +
-            //     '<div class="video-box">' +
-            //     '<video poster="./assets/img/video/poster/poster.jpg" class="video" src="' + file_url + '" type="video/mp4" src="' + file_url + '"></video>' +
-            //     '<div class="video-play__bg">' +
-            //     '<span class="video-play__icon"></span>' +
-            //     '</div>' +
-            //     '</div>' +
-            //     '</div>' +
-            //     '<p class="file-name">' + fl_name + '</p>' +
-            //     '</div>' +
-            //     '<div class="remove-file-v"></div>' +
-            //     '<div class="fileappend"></div>' +
-            //     '</div>')
+            $(file_block).append('<div class="files-box video-block">' +
+                '<div class="company-document__video">' +
+                '<div class="single-video__block" >' +
+                '<div class="video-box">' +
+                '<video poster="./assets/img/video/poster/poster.jpg" class="video" src="' + file_url + '" type="video/mp4" src="' + file_url + '"></video>' +
+                '<div class="video-play__bg">' +
+                '<span class="video-play__icon"></span>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '<p class="file-name">' + fl_name + '</p>' +
+                '</div>' +
+                '<div class="remove-file-v"></div>' +
+                '<div class="fileappend"></div>' +
+                '</div>')
 
             $('.fileappend').each(function () {
                 $(this).hide()
@@ -554,6 +554,9 @@ $(document).ready(function () {
     })
 
     //  ================ -NEWS PAGE-JS-END- ================
+
+
+    
     //  ================ -PROFILE-JS-START- ================
     $('.expand').on('click',function()
         {

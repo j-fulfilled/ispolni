@@ -41,6 +41,8 @@
       margin-bottom: 0;
       .download-documents {
         margin-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
       }
     }
   }
@@ -53,7 +55,7 @@
     tr {
       td {
         font-size: 13px;
-        color: #4f4f4f;
+        color: $color-dark;
         padding: 7.5px 0;
         &:first-child {
           font-weight: 500;
@@ -97,16 +99,22 @@
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
-    color: #4f4f4f;
+    color: $color-dark;
   }
   span {
     width: 32px;
     height: 32px;
     background-color: rgba($color: #bdbdbd, $alpha: 0.2);
     border-radius: 50%;
+    cursor: pointer;
+    &:hover svg{
+      fill: $color-global;
+    }
     svg {
       width: 15px;
       height: 15px;
+      fill: $color-dark;
+      transition: $transition-all;
     }
   }
 }
@@ -117,7 +125,7 @@
   }
   .choose-document {
     p {
-      color: #4f4f4f !important;
+      color: $color-dark !important;
     }
     .download-documents {
       background-color: #e0e0e0 !important;
@@ -132,7 +140,7 @@
     margin-bottom: 16px;
 
     span {
-      color: #4f4f4f;
+      color: $color-dark;
     }
   }
 }
@@ -142,7 +150,7 @@
     font-weight: normal;
     font-size: 13px;
     line-height: 17px;
-    color: #4f4f4f;
+    color: $color-dark;
     padding-left: 25px;
     position: relative;
     margin-bottom: 15px;
@@ -161,9 +169,10 @@
   overflow: hidden;
 }
 .all-info__scroll {
-  color: #2dca73;
+  color: $color-global;
   font-weight: 500;
   font-size: 14px;
   text-align: center;
   margin-top: 27px;
+  cursor: pointer;
 }
