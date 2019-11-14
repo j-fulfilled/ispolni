@@ -4774,6 +4774,15 @@ p {
   }
   /*=================== -BALANCE-max-width-575.98-END- =================== */
   /*================= -PROFILE-max-width-575.98-START- ================= */
+  .profile-info {
+    margin: 0 -10px;
+  }
+  .profile-info .profile-info__main .personal-info {
+    margin: 0;
+  }
+  .profile-info .profile-info__main .personal-info .personal-info__main {
+    padding: 0;
+  }
   .personal-info__table {
     padding: 20px 10px;
   }
@@ -4816,9 +4825,12 @@ p {
   .requisites-info__block .requisites-info__box .requisites-info__box--number {
     max-width: 100%;
   }
-  .requisites-info__box .requisites-info__box--number .requisites-info__box--number-box p {
-    margin: 5px 0 0 0;
-    font-size: 14px;
+  .requisites-info__box
+.requisites-info__box--number
+.requisites-info__box--number-box
+p {
+    margin: 5px 0 0 0 !important;
+    font-size: 14px !important;
   }
   .requisites-info__block
 .requisites-info__box
