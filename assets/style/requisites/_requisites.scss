@@ -19,10 +19,16 @@
     }
   }
 }
+.requisites{
+  background-color: #ffffff;
+  padding: 35px 15px 39px;
+  border-radius: $border-radius;
+}
 .requisites-info__block {
   max-width: 790px;
   width: 100%;
   margin: auto;
+  
   .requisites-info__box {
     text-align: center;
     .requisites-info__box--title {
@@ -36,8 +42,9 @@
     .requisites-info__box--number {
       max-width: 437px;
       width: 100%;
-      margin: auto;
-      text-align: start;
+      margin-left: auto;
+      text-align: left;
+      margin-right: 98px;
       .requisites-info__box--number-box {
         margin-bottom: 18px;
         span {
@@ -73,3 +80,4 @@
     }
   }
 }
+

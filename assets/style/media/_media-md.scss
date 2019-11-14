@@ -18,7 +18,7 @@
     width: 230px;
     transition: $transition-all;
     box-shadow: 0px 0px 8px #333;
-}
+  }
   .header-menu__mobile {
     display: block;
   }
@@ -236,11 +236,10 @@
   .borrow-info__block {
     margin: 46px 0 12px;
   }
-  .borrow-info__circle{
+  .borrow-info__circle {
     flex-direction: column;
-
   }
-  .circle{
+  .circle {
     margin-bottom: 50px;
   }
   .borrow-info__block .borrow-number__all {
@@ -257,56 +256,58 @@
   /*================== -PROJECT-INVESTMENT-max-width-767.98-START- ================== */
   .cost-info__details .about-cost__range {
     width: 100%;
-
-}
-.cost-info__details > p {
-  width: 100%;
-margin-bottom: 15px;}
+  }
+  .cost-info__details > p {
+    width: 100%;
+    margin-bottom: 15px;
+  }
   /*=================== -PROJECT-INVESTMENT-max-width-767.98-END- =================== */
 
-
-
-
-    /*=================== - NEWS-max-width-767.98-START- =================== */
-    .news-info {
-      margin: 0 -5px;
+  /*=================== - NEWS-max-width-767.98-START- =================== */
+  .news-info {
+    margin: 0 -5px;
   }
   .news-info .news-info__block {
     width: 100%;
     padding: 10px 5px;
-}
-.news-info .news-info__block .news-info__box {
-  padding: 22px 15px 35px 15px;}
+  }
+  .news-info .news-info__block .news-info__box {
+    padding: 22px 15px 35px 15px;
+  }
   .news-info .news-info__block .news-info__box .news-info__box--text__block {
     min-height: auto;
-}
-    /*=================== - NEWS-max-width-767.98-END- =================== */
-    /*================= -PROFILE-max-width-767.98-START- ================= */
-    .personal-info__table {
-      padding: 25px 20px;
   }
-    .profile-info .profile-info__main .personal-info .personal-info__main {
-      width: 100%;
+  /*=================== - NEWS-max-width-767.98-END- =================== */
+  /*================= -PROFILE-max-width-767.98-START- ================= */
+  .personal-info__table {
+    padding: 25px 20px;
+  }
+  .profile-info .profile-info__main .personal-info .personal-info__main {
+    width: 100%;
   }
   .profile-info .company-info__main {
-margin-top: 20px;}
-.company-info__block .title-cost__info{
-  flex-direction: initial;
-}
-    /*================== -PROFILE-max-width-767.98-END- ================== */
-    /*=============== -REQUISTIES-max-width-767.98-START- ================ */
-    .title-cost__info{
-      flex-direction: column;
-    }
-  .requisites-link__download{
+    margin-top: 20px;
+  }
+  .company-info__block .title-cost__info {
+    flex-direction: initial;
+  }
+  /*================== -PROFILE-max-width-767.98-END- ================== */
+  /*=============== -REQUISTIES-max-width-767.98-START- ================ */
+  .title-cost__info {
+    flex-direction: column;
+  }
+  .requisites-link__download {
     margin-top: 10px;
+  }
+  .requisites .requisites-info__block .requisites-info__box .requisites-info__box--number{
+    margin-left: 0;
+    margin-right: 0;
   }
   .requisites-info__block .requisites-info__box .requisites-info__box--title p {
     margin-bottom: 25px;
-}
-.requisites-info__block .requisites-info__box .requisites-info__box--text {
-  margin-bottom: 25px;
-}
-    /*================= -REQUISTIES-max-width-767.98-END- ================ */
-
+  }
+  .requisites-info__block .requisites-info__box .requisites-info__box--text {
+    margin-bottom: 25px;
+  }
+  /*================= -REQUISTIES-max-width-767.98-END- ================ */
 }

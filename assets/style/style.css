@@ -2760,6 +2760,12 @@ header {
   fill: white;
 }
 
+.requisites {
+  background-color: #ffffff;
+  padding: 35px 15px 39px;
+  border-radius: 8px;
+}
+
 .requisites-info__block {
   max-width: 790px;
   width: 100%;
@@ -2780,8 +2786,9 @@ header {
 .requisites-info__block .requisites-info__box .requisites-info__box--number {
   max-width: 437px;
   width: 100%;
-  margin: auto;
-  text-align: start;
+  margin-left: auto;
+  text-align: left;
+  margin-right: 98px;
 }
 
 .requisites-info__block .requisites-info__box .requisites-info__box--number .requisites-info__box--number-box {
@@ -4472,6 +4479,10 @@ button
   .requisites-link__download {
     margin-top: 10px;
   }
+  .requisites .requisites-info__block .requisites-info__box .requisites-info__box--number {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .requisites-info__block .requisites-info__box .requisites-info__box--title p {
     margin-bottom: 25px;
   }
@@ -4805,12 +4816,8 @@ p {
   .requisites-info__block .requisites-info__box .requisites-info__box--number {
     max-width: 100%;
   }
-  .requisites-info__block
-.requisites-info__box
-.requisites-info__box--number
-.requisites-info__box--number-box
-p {
-    margin: 5px 0 0;
+  .requisites-info__box .requisites-info__box--number .requisites-info__box--number-box p {
+    margin: 5px 0 0 0;
     font-size: 14px;
   }
   .requisites-info__block
@@ -4822,7 +4829,7 @@ span {
   }
   .requisites-info__block .requisites-info__box .requisites-info__box--text {
     margin-bottom: 15px;
-    text-align: start;
+    text-align: left;
   }
   .requisites-info__block .requisites-info__box .requisites-info__box--text p {
     line-height: unset;

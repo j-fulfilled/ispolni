@@ -338,12 +338,8 @@
   .requisites-info__block .requisites-info__box .requisites-info__box--number {
     max-width: 100%;
   }
-  .requisites-info__block
-    .requisites-info__box
-    .requisites-info__box--number
-    .requisites-info__box--number-box
-    p {
-    margin: 5px 0 0;
+  .requisites-info__box .requisites-info__box--number .requisites-info__box--number-box p{
+    margin: 5px 0 0 0;
     font-size: 14px;
   }
   .requisites-info__block
@@ -355,7 +351,7 @@
   }
   .requisites-info__block .requisites-info__box .requisites-info__box--text {
     margin-bottom: 15px;
-    text-align: start;
+    text-align: left;
   }
   .requisites-info__block .requisites-info__box .requisites-info__box--text p {
     line-height: unset;
