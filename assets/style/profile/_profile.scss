@@ -1,0 +1,164 @@
+.profile-info {
+  margin: 0 -12.5px;
+  .profile-info__main {
+    padding: 0 12.5px;
+    width: 66.66%;
+    .personal-info {
+      margin: 0 -12.5px;
+      .personal-info__main {
+        padding: 0 12.5px;
+        width: 50%;
+      }
+    }
+    .settings-info {
+      margin-top: 38px;
+      .new-request__protection {
+        background: none;
+        border: none;
+        padding: 0 0 12px 0;
+      }
+      .new-request__protection .new-request__text {
+        margin-top: 2px;
+        padding-left: 36px;
+        padding-right: 0;
+      }
+      .new-request__protection .steps-box__btn--check {
+        padding-left: 0;
+      }
+    }
+  }
+  .company-info__main {
+    padding: 0 12.5px;
+    width: 33.33%;
+    .add-company {
+      a {
+        font-weight: 500;
+        font-size: 14px;
+        color: #2dca73;
+      }
+    }
+    .single-video__block {
+      margin-bottom: 0;
+      .download-documents {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.personal-info__table {
+  background-color: white;
+  padding: 37px 24px;
+  table {
+    margin-bottom: 30px;
+    tr {
+      td {
+        font-size: 13px;
+        color: #4f4f4f;
+        padding: 7.5px 0;
+        &:first-child {
+          font-weight: 500;
+          width: 128px;
+        }
+        &:not(:first-child) {
+          padding-left: 12px;
+        }
+      }
+    }
+  }
+
+  .download-info__text {
+    margin-bottom: 26px;
+    p {
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 20px;
+      color: #828282;
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .personal-more__info {
+    .password-info {
+      margin-bottom: 14px;
+    }
+    p {
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 17px;
+      color: #333333;
+    }
+  }
+}
+.personal-info__title {
+  margin-bottom: 29px;
+  h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #4f4f4f;
+  }
+  span {
+    width: 32px;
+    height: 32px;
+    background-color: rgba($color: #bdbdbd, $alpha: 0.2);
+    border-radius: 50%;
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+.video__img--download {
+  width: 100%;
+  &:not(:first-child) {
+    margin-top: 21px;
+  }
+  .choose-document {
+    p {
+      color: #4f4f4f !important;
+    }
+    .download-documents {
+      background-color: #e0e0e0 !important;
+      border: 2px solid #e0e0e0 !important;
+      p {
+        font-weight: 500;
+      }
+    }
+  }
+  .choose-file__input {
+    background-color: #f2f2f2;
+    margin-bottom: 16px;
+
+    span {
+      color: #4f4f4f;
+    }
+  }
+}
+
+.company-document__download {
+  a {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    color: #4f4f4f;
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 15px;
+    display: block;
+    span {
+      position: absolute;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      top: 0;
+    }
+  }
+}
+.all-info__scroll {
+  color: #2dca73;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}

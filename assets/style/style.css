@@ -2760,6 +2760,251 @@ header {
   fill: white;
 }
 
+.requisites-info__block {
+  max-width: 790px;
+  width: 100%;
+  margin: auto;
+}
+
+.requisites-info__block .requisites-info__box {
+  text-align: center;
+}
+
+.requisites-info__block .requisites-info__box .requisites-info__box--title p {
+  font-weight: normal;
+  font-size: 15px;
+  color: #828282;
+  margin-bottom: 38px;
+}
+
+.requisites-info__block .requisites-info__box .requisites-info__box--number {
+  max-width: 437px;
+  width: 100%;
+  margin: auto;
+  text-align: start;
+}
+
+.requisites-info__block .requisites-info__box .requisites-info__box--number .requisites-info__box--number-box {
+  margin-bottom: 18px;
+}
+
+.requisites-info__block .requisites-info__box .requisites-info__box--number .requisites-info__box--number-box span {
+  font-weight: 500;
+  font-size: 15px;
+  color: #4f4f4f;
+  width: 86px;
+}
+
+.requisites-info__block .requisites-info__box .requisites-info__box--number .requisites-info__box--number-box p {
+  margin-left: 27px;
+  font-weight: normal;
+  font-size: 15px;
+  color: #4f4f4f;
+}
+
+.requisites-info__block .requisites-info__box .requisites-info__box--text {
+  margin-bottom: 40px;
+}
+
+.requisites-info__block .requisites-info__box .requisites-info__box--text p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4f4f4f;
+}
+
+.requisites-info__block .requisites-info__box .requisites-info__box--link a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #2dca73;
+}
+
+.profile-info {
+  margin: 0 -12.5px;
+}
+
+.profile-info .profile-info__main {
+  padding: 0 12.5px;
+  width: 66.66%;
+}
+
+.profile-info .profile-info__main .personal-info {
+  margin: 0 -12.5px;
+}
+
+.profile-info .profile-info__main .personal-info .personal-info__main {
+  padding: 0 12.5px;
+  width: 50%;
+}
+
+.profile-info .profile-info__main .settings-info {
+  margin-top: 38px;
+}
+
+.profile-info .profile-info__main .settings-info .new-request__protection {
+  background: none;
+  border: none;
+  padding: 0 0 12px 0;
+}
+
+.profile-info .profile-info__main .settings-info .new-request__protection .new-request__text {
+  margin-top: 2px;
+  padding-left: 36px;
+  padding-right: 0;
+}
+
+.profile-info .profile-info__main .settings-info .new-request__protection .steps-box__btn--check {
+  padding-left: 0;
+}
+
+.profile-info .company-info__main {
+  padding: 0 12.5px;
+  width: 33.33%;
+}
+
+.profile-info .company-info__main .add-company a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #2dca73;
+}
+
+.profile-info .company-info__main .single-video__block {
+  margin-bottom: 0;
+}
+
+.profile-info .company-info__main .single-video__block .download-documents {
+  margin-bottom: 0;
+}
+
+.personal-info__table {
+  background-color: white;
+  padding: 37px 24px;
+}
+
+.personal-info__table table {
+  margin-bottom: 30px;
+}
+
+.personal-info__table table tr td {
+  font-size: 13px;
+  color: #4f4f4f;
+  padding: 7.5px 0;
+}
+
+.personal-info__table table tr td:first-child {
+  font-weight: 500;
+  width: 128px;
+}
+
+.personal-info__table table tr td:not(:first-child) {
+  padding-left: 12px;
+}
+
+.personal-info__table .download-info__text {
+  margin-bottom: 26px;
+}
+
+.personal-info__table .download-info__text p {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.personal-info__table .download-info__text p span {
+  font-weight: 500;
+}
+
+.personal-info__table .personal-more__info .password-info {
+  margin-bottom: 14px;
+}
+
+.personal-info__table .personal-more__info p {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  color: #333333;
+}
+
+.personal-info__title {
+  margin-bottom: 29px;
+}
+
+.personal-info__title h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: #4f4f4f;
+}
+
+.personal-info__title span {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(189, 189, 189, 0.2);
+  border-radius: 50%;
+}
+
+.personal-info__title span svg {
+  width: 15px;
+  height: 15px;
+}
+
+.video__img--download {
+  width: 100%;
+}
+
+.video__img--download:not(:first-child) {
+  margin-top: 21px;
+}
+
+.video__img--download .choose-document p {
+  color: #4f4f4f !important;
+}
+
+.video__img--download .choose-document .download-documents {
+  background-color: #e0e0e0 !important;
+  border: 2px solid #e0e0e0 !important;
+}
+
+.video__img--download .choose-document .download-documents p {
+  font-weight: 500;
+}
+
+.video__img--download .choose-file__input {
+  background-color: #f2f2f2;
+  margin-bottom: 16px;
+}
+
+.video__img--download .choose-file__input span {
+  color: #4f4f4f;
+}
+
+.company-document__download a {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  color: #4f4f4f;
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.company-document__download a span {
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  top: 0;
+}
+
+.all-info__scroll {
+  color: #2dca73;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+
 .data-block {
   max-width: 696px;
   width: 100%;
@@ -3466,12 +3711,12 @@ header {
     width: 20%;
   }
   /*========================== -DOCUMENTS-max-width-1366-END- ======================= */
-  /*================== -BALANCE-max-width-1199.98-START- ================== */
+  /*================== -BALANCE-max-width-1366-START- ================== */
   .balance-history .balance-history__form .balance-history__form--info .jq-selectbox__select {
     width: 180px;
     padding: 0 14px;
   }
-  /*=================== -BALANCE-max-width-1199.98-END- =================== */
+  /*=================== -BALANCE-max-width-1366-END- =================== */
 }
 
 @media (max-width: 1199.98px) {
@@ -3813,10 +4058,18 @@ header {
   .balance-history {
     padding: 34px 15px 0 15px;
   }
-  .balance-history .balance-history__form .balance-history__form--info .balance-history__form--info__date .balance-history__form--info__date--box {
+  .balance-history
+.balance-history__form
+.balance-history__form--info
+.balance-history__form--info__date
+.balance-history__form--info__date--box {
     width: 50%;
   }
-  .balance-history .balance-history__form .balance-history__form--info .balance-history__form--info__date .balance-history__form--info__date--box input {
+  .balance-history
+.balance-history__form
+.balance-history__form--info
+.balance-history__form--info__date
+.balance-history__form--info__date--box input {
     font-size: 13px;
   }
   .balance-history .balance-history__form .balance-history__form--info {
@@ -3846,7 +4099,11 @@ header {
   .balance-history .balance-history__form .balance-history__form--btn button {
     width: 100%;
   }
-  .balance-history .balance-history__form .balance-history__form--btn button + button {
+  .balance-history
+.balance-history__form
+.balance-history__form--btn
+button
++ button {
     margin-left: 0;
     margin-top: 20px;
   }
@@ -3854,6 +4111,14 @@ header {
     margin: 0 -15px;
   }
   /*=================== -BALANCE-max-width-1199.98-END- =================== */
+  /*================== -PROFILE-max-width-1199.98-START- ================== */
+  .profile-info .profile-info__main {
+    width: 100%;
+  }
+  .profile-info .company-info__main {
+    width: 100%;
+  }
+  /*=================== -PROFILE-max-width-1199.98-END- =================== */
 }
 
 @media (max-width: 767.98px) {
@@ -4174,6 +4439,40 @@ header {
     min-height: auto;
   }
   /*=================== - NEWS-max-width-767.98-END- =================== */
+  /*================= -PROFILE-max-width-767.98-START- ================= */
+  .personal-info__table {
+    padding: 25px 20px;
+  }
+  .profile-info .profile-info__main .personal-info .personal-info__main {
+    width: 100%;
+  }
+  .profile-info .company-info__main {
+    margin-top: 20px;
+  }
+  .company-info__block .title-cost__info {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+  }
+  /*================== -PROFILE-max-width-767.98-END- ================== */
+  /*=============== -REQUISTIES-max-width-767.98-START- ================ */
+  .title-cost__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .requisites-link__download {
+    margin-top: 10px;
+  }
+  .requisites-info__block .requisites-info__box .requisites-info__box--title p {
+    margin-bottom: 25px;
+  }
+  .requisites-info__block .requisites-info__box .requisites-info__box--text {
+    margin-bottom: 25px;
+  }
+  /*================= -REQUISTIES-max-width-767.98-END- ================ */
 }
 
 @media (max-width: 575.98px) {
@@ -4309,6 +4608,9 @@ header {
   .projects-parameters__block {
     padding: 20px 15px;
   }
+  .projects-same__info table td:not(.d_flex) {
+    display: block;
+  }
   .projects-same__info table td:first-child {
     padding-bottom: 5px;
   }
@@ -4423,11 +4725,12 @@ header {
   .project-investment__block .steps-box__btn button {
     margin: 0 auto;
   }
-  .project-investment__block .steps-box__btn .steps-box__btn--check, .page-title.document-code {
+  .project-investment__block .steps-box__btn .steps-box__btn--check,
+  .page-title.document-code {
     text-align: center;
   }
   /*======================== -INVESTMENT_CODE-max-width-575.98-END- ====================== */
-  /*================== -BALANCE-max-width-1199.98-START- ================== */
+  /*================== -BALANCE-max-width-575.98-START- ================== */
   .balance-info {
     margin: 0 -5.5px;
   }
@@ -4435,7 +4738,11 @@ header {
     width: 100%;
     padding: 5.5px;
   }
-  .balance-info .balance-info__block .balance-info__box .balance-info__box--sum p {
+  .balance-info
+.balance-info__block
+.balance-info__box
+.balance-info__box--sum
+p {
     font-size: 24px;
   }
   .balance-history__form form {
@@ -4448,6 +4755,72 @@ header {
     padding-right: 0;
     margin-bottom: 40px;
   }
-  /*=================== -BALANCE-max-width-1199.98-END- =================== */
+  /*=================== -BALANCE-max-width-575.98-END- =================== */
+  /*================= -PROFILE-max-width-575.98-START- ================= */
+  .personal-info__table {
+    padding: 20px 10px;
+  }
+  .personal-info__title {
+    margin-bottom: 15px;
+  }
+  .personal-info__table table tr td {
+    display: block;
+    padding: 5px 0;
+  }
+  .personal-info__table table tr td:not(:first-child) {
+    padding-left: 0;
+  }
+  .personal-info__table table {
+    margin-bottom: 20px;
+  }
+  /*================== -PROFILE-max-width-575.98-END- ================== */
+  /*=============== -REQUISTIES-max-width-575.98-START- ================ */
+  .requisites-link__download {
+    width: 255px;
+  }
+  .requisites-link__download a svg {
+    width: 12px;
+    height: 12px;
+  }
+  .requisites-link__download a {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .requisites-info__block .requisites-info__box .requisites-info__box--title p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .requisites-info__box--number-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .requisites-info__block .requisites-info__box .requisites-info__box--number {
+    max-width: 100%;
+  }
+  .requisites-info__block
+.requisites-info__box
+.requisites-info__box--number
+.requisites-info__box--number-box
+p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+  .requisites-info__block
+.requisites-info__box
+.requisites-info__box--number
+.requisites-info__box--number-box
+span {
+    font-size: 14px;
+  }
+  .requisites-info__block .requisites-info__box .requisites-info__box--text {
+    margin-bottom: 15px;
+    text-align: start;
+  }
+  .requisites-info__block .requisites-info__box .requisites-info__box--text p {
+    line-height: unset;
+  }
+  /*================= -REQUISTIES-max-width-575.98-END- ================ */
 }
 /*# sourceMappingURL=style.css.map */

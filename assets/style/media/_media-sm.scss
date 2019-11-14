@@ -12,7 +12,7 @@
     width: 95px;
   }
 
-  .header-user .header-user__select .jq-selectbox__select{
+  .header-user .header-user__select .jq-selectbox__select {
     padding: 8px 0;
   }
 
@@ -44,12 +44,12 @@
     right: 16px;
   }
 
-  .header-user__drop{
+  .header-user__drop {
     width: max-content;
     left: -18px;
     padding: 24px 32px 0;
   }
-  .header-user__drop .user-drop__company .user-drop__company--list{
+  .header-user__drop .user-drop__company .user-drop__company--list {
     padding: 16px 32px 40px 32px;
     margin: 0 -32px 0 -32px;
   }
@@ -138,7 +138,9 @@
   .projects-same__info {
     table {
       td {
-
+        &:not(.d_flex) {
+          display: block;
+        }
         &:first-child {
           padding-bottom: 5px;
         }
@@ -218,10 +220,10 @@
     margin-top: 20px;
   }
   .videos-info__block .video-block p,
-  .company-document__main .single-info__block--big .single-info__block p{
+  .company-document__main .single-info__block--big .single-info__block p {
     text-align: center;
   }
-  .single-video__block .video-box:hover{
+  .single-video__block .video-box:hover {
     box-shadow: none;
   }
   /*======================== -DOCUMENTS-max-width-575.98-END- ====================== */
@@ -255,46 +257,108 @@
     }
   }
 
-
   /*======================== -BORROWERS-max-width-575.98-END- ====================== */
 
-
   /*======================== -INVESTMENT_CODE-max-width-575.98-START- ====================== */
-  .investment-code__block .investment-code__title p span{
+  .investment-code__block .investment-code__title p span {
     display: block;
     margin-top: 7px;
   }
-  .project-investment__block .steps-box__btn button{
+  .project-investment__block .steps-box__btn button {
     margin: 0 auto;
   }
-  .project-investment__block .steps-box__btn .steps-box__btn--check,.page-title.document-code{
+  .project-investment__block .steps-box__btn .steps-box__btn--check,
+  .page-title.document-code {
     text-align: center;
   }
   /*======================== -INVESTMENT_CODE-max-width-575.98-END- ====================== */
 
+  /*================== -BALANCE-max-width-575.98-START- ================== */
+  .balance-info {
+    margin: 0 -5.5px;
+  }
+  .balance-info .balance-info__block {
+    width: 100%;
+    padding: 5.5px;
+  }
+  .balance-info
+    .balance-info__block
+    .balance-info__box
+    .balance-info__box--sum
+    p {
+    font-size: 24px;
+  }
 
+  .balance-history__form form {
+    flex-direction: column;
+  }
+  .balance-history .balance-history__form .balance-history__form--info {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  /*=================== -BALANCE-max-width-575.98-END- =================== */
+  /*================= -PROFILE-max-width-575.98-START- ================= */
+  .personal-info__table {
+    padding: 20px 10px;
+  }
+  .personal-info__title {
+    margin-bottom: 15px;
+  }
+  .personal-info__table table tr td {
+    display: block;
+    padding: 5px 0;
+  }
+  .personal-info__table table tr td:not(:first-child) {
+    padding-left: 0;
+  }
+  .personal-info__table table {
+    margin-bottom: 20px;
+}
 
-
-
-      /*================== -BALANCE-max-width-1199.98-START- ================== */
-      .balance-info {
-        margin: 0 -5.5px;
-    }
-      .balance-info .balance-info__block {
-        width: 100%;
-        padding: 5.5px;
-  
-    }
-    .balance-info .balance-info__block .balance-info__box .balance-info__box--sum p{
-      font-size: 24px;
-    }
-
-    .balance-history__form form{
-      flex-direction: column;
-    }
-    .balance-history .balance-history__form .balance-history__form--info{
-      padding-right: 0;
-      margin-bottom: 40px;
-    }
-    /*=================== -BALANCE-max-width-1199.98-END- =================== */
+  /*================== -PROFILE-max-width-575.98-END- ================== */
+  /*=============== -REQUISTIES-max-width-575.98-START- ================ */
+  .requisites-link__download {
+    width: 255px;
+  }
+  .requisites-link__download a svg {
+    width: 12px;
+    height: 12px;
+  }
+  .requisites-link__download a {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .requisites-info__block .requisites-info__box .requisites-info__box--title p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .requisites-info__box--number-box {
+    flex-direction: column;
+  }
+  .requisites-info__block .requisites-info__box .requisites-info__box--number {
+    max-width: 100%;
+  }
+  .requisites-info__block
+    .requisites-info__box
+    .requisites-info__box--number
+    .requisites-info__box--number-box
+    p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+  .requisites-info__block
+    .requisites-info__box
+    .requisites-info__box--number
+    .requisites-info__box--number-box
+    span {
+    font-size: 14px;
+  }
+  .requisites-info__block .requisites-info__box .requisites-info__box--text {
+    margin-bottom: 15px;
+    text-align: start;
+  }
+  .requisites-info__block .requisites-info__box .requisites-info__box--text p {
+    line-height: unset;
+  }
+  /*================= -REQUISTIES-max-width-575.98-END- ================ */
 }

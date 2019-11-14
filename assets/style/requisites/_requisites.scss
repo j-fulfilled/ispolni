@@ -1,21 +1,75 @@
 .requisites-link__download {
-    width: 298px;
-    height: 48px;
+  width: 298px;
+  height: 48px;
 
-    a {
-        width: 100%;
-        height: 100%;
-        font-weight: bold;
-        font-size: 15px;
-        color: white;
-        padding: 0 17.75px;
-        border-radius: $border-radius;
-        background-color: $color-global;
+  a {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    padding: 0 17.75px;
+    border-radius: $border-radius;
+    background-color: $color-global;
 
-        svg {
-            width: 16.5px;
-            height: 17.42px;
-            fill: white;
-        }
+    svg {
+      width: 16.5px;
+      height: 17.42px;
+      fill: white;
     }
+  }
+}
+.requisites-info__block {
+  max-width: 790px;
+  width: 100%;
+  margin: auto;
+  .requisites-info__box {
+    text-align: center;
+    .requisites-info__box--title {
+      p {
+        font-weight: normal;
+        font-size: 15px;
+        color: #828282;
+        margin-bottom: 38px;
+      }
+    }
+    .requisites-info__box--number {
+      max-width: 437px;
+      width: 100%;
+      margin: auto;
+      text-align: start;
+      .requisites-info__box--number-box {
+        margin-bottom: 18px;
+        span {
+          font-weight: 500;
+          font-size: 15px;
+          color: #4f4f4f;
+          width: 86px;
+        }
+        p {
+          margin-left: 27px;
+          font-weight: normal;
+          font-size: 15px;
+          color: #4f4f4f;
+        }
+      }
+    }
+    .requisites-info__box--text {
+      margin-bottom: 40px;
+
+      p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #4f4f4f;
+      }
+    }
+    .requisites-info__box--link {
+   a {
+        font-weight: 500;
+        font-size: 14px;
+        color: #2dca73;
+      }
+    }
+  }
 }

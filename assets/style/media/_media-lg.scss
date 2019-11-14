@@ -339,101 +339,103 @@
   /*======================= -DOCUMENTS-max-width-1199.98-START- ====================== */
   .company-document__main .single-info__block--big {
     width: 25%;
-}
+  }
   /*======================== -DOCUMENTS-max-width-1199.98-END- ======================= */
   /*======================= -BORROWERS-max-width-1199.98-START- ====================== */
-  .security-block{
+  .security-block {
     text-align: center;
   }
-  .cost-investment__info--block{
+  .cost-investment__info--block {
     .projects-same__info {
-      
-    table {
-      
-      tr td {
-        font-size: 14px;
+      table {
+        tr td {
+          font-size: 14px;
         }
+      }
+    }
   }
-   
-  }
-}
-    .contracts-history table {
-      margin:0 auto 20px;
-      width: 300px;
+  .contracts-history table {
+    margin: 0 auto 20px;
+    width: 300px;
   }
   .borrowers-history__table table td {
     font-size: 12px;
-  padding: 0 8px;} 
+    padding: 0 8px;
+  }
   .borrowers-history__table table tr:first-child th {
     padding: 8px;
     font-size: 12px;
   }
-    /*======================== -BORROWERS-max-width-1199.98-END- ======================= */
+  /*======================== -BORROWERS-max-width-1199.98-END- ======================= */
   /*================== -PROJECT-INVESTMENT-max-width-1199.98-START- ================== */
-    .project-investment__about--cost {
-      width: 100%;
-      margin-top: 15px;
-
+  .project-investment__about--cost {
+    width: 100%;
+    margin-top: 15px;
   }
   /*=================== -PROJECT-INVESTMENT-max-width-1199.98-END- =================== */
 
-
-
-    /*================== -BALANCE-max-width-1199.98-START- ================== */
-    .balance-info .balance-info__block {
-      width: 50%;
-
+  /*================== -BALANCE-max-width-1199.98-START- ================== */
+  .balance-info .balance-info__block {
+    width: 50%;
   }
   .balance-info .balance-info__block .balance-info__box {
     padding: 34px 15px 40px 15px;
   }
 
-
-.balance-history{
-  padding: 34px 15px 0 15px;
-}
-.balance-history .balance-history__form .balance-history__form--info .balance-history__form--info__date .balance-history__form--info__date--box{
-  width: 50%;
-  input{
-    font-size: 13px;
+  .balance-history {
+    padding: 34px 15px 0 15px;
   }
-}
-.balance-history .balance-history__form .balance-history__form--info {
-  width: 100%;
-  flex-direction: column;
-  .jq-selectbox__select{
-    width: 100%;
-    .jq-selectbox__select-text{
-      width: 100%;
+  .balance-history
+    .balance-history__form
+    .balance-history__form--info
+    .balance-history__form--info__date
+    .balance-history__form--info__date--box {
+    width: 50%;
+    input {
+      font-size: 13px;
     }
   }
-  .balance-history__form--info__date{
-    margin-right: 0;
-    margin-bottom: 20px;
+  .balance-history .balance-history__form .balance-history__form--info {
+    width: 100%;
+    flex-direction: column;
+    .jq-selectbox__select {
+      width: 100%;
+      .jq-selectbox__select-text {
+        width: 100%;
+      }
+    }
+    .balance-history__form--info__date {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
-}
-.balance-history__form--btn{
-  width: 100%;
-  flex-direction: column;
-}
-.balance-history .balance-history__form .balance-history__form--btn button{
-  width: 100%;
-}
-.balance-history .balance-history__form .balance-history__form--btn button + button {
-margin-left: 0;
-margin-top: 20px;
-}
+  .balance-history__form--btn {
+    width: 100%;
+    flex-direction: column;
+  }
+  .balance-history .balance-history__form .balance-history__form--btn button {
+    width: 100%;
+  }
+  .balance-history
+    .balance-history__form
+    .balance-history__form--btn
+    button
+    + button {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 
-.balance-history .balance-history__table{
-  margin: 0 -15px;
-}
+  .balance-history .balance-history__table {
+    margin: 0 -15px;
+  }
   /*=================== -BALANCE-max-width-1199.98-END- =================== */
 
-
-
-
-
-
-
-
+  /*================== -PROFILE-max-width-1199.98-START- ================== */
+  .profile-info .profile-info__main {
+    width: 100%;
+  }
+  .profile-info .company-info__main {
+    width: 100%;
+  }
+  /*=================== -PROFILE-max-width-1199.98-END- =================== */
 }
