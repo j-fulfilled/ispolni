@@ -3010,6 +3010,7 @@ header {
 
 .passport-img {
   position: relative;
+  margin-bottom: 17px;
 }
 
 .passport-img img {
