@@ -575,8 +575,59 @@ $(document).ready(function () {
             }
             
         }
-    )
+    );
 
+    $('.choose-file__passport').on('change',function(){
+      var this_prt = $(this).parent();
+      var this_child = $(this_prt).parent();
+      var this_parent = $(this_child).parent().hide();
+      var parent_block_passport = $(this_parent).parent();
+      var url_passport = URL.createObjectURL(this.files[0]);
+      $(parent_block_passport).append(
+          '<div class="passport-img"><img src="'+url_passport+'"><div class="remove-file__passport"></div></div>'); 
+    })
+
+    $(document).on('click', '.remove-file__passport', function () {
+        var remove_q = confirm("Удалить?");
+        if (remove_q == true) {
+        var passport_img_prt = $(this).parent();
+        var passport_file_prt = $(passport_img_prt).parent();
+         $(passport_file_prt).children('.company-document__video').show();
+         var remove_passport_file = $(passport_file_prt).children('.passport-img');
+         remove_passport_file.remove();    
+        }
+    })
+    
+    $('.choose-file__company--video').on('change',function(){
+        var this_prt = $(this).parent();
+        var this_child = $(this_prt).parent();
+        var this_parent = $(this_child).parent().hide();
+        var parent_block_passport = $(this_parent).parent();
+        var file_url = URL.createObjectURL(this.files[0]);
+        $(parent_block_passport).append(
+            '<div class="added-video"><video poster="./assets/img/video/poster/poster.jpg" class="video" src="' + file_url + '" type="video/mp4" src="' + file_url + '"></video><div class="video-play__bg"><span class="video-play__icon"></span></div><div class="remove-company__video"></div></div>'); 
+            $('.video-play__bg').click(function () {
+                var this_prt = $(this).parent()
+                var parent_video = $(this_prt)
+                var icon_video = $(parent_video).find(".video-play__bg")
+                var video = $(parent_video).find(".video")
+                $(video).trigger('play')
+                $(video).attr("controls", "controls")
+                $(icon_video).fadeOut()
+            })
+        })
+  
+      $(document).on('click', '.remove-company__video', function () {
+          var remove_q = confirm("Удалить?");
+          if (remove_q == true) {
+          var passport_img_prt = $(this).parent();
+          var passport_file_prt = $(passport_img_prt).parent();
+           $(passport_file_prt).children('.company-document__video').show();
+           var remove_passport_file = $(passport_file_prt).children('.added-video');
+           remove_passport_file.remove();    
+          }    
+      })
+      
     //  ================= -PROFILE-JS-END- =================
 
 
@@ -598,6 +649,7 @@ function myFunction() {
         }
     }
 }
+
 
 
 
