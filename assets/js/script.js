@@ -633,7 +633,10 @@ $(document).ready(function () {
 
 
       $(".rename-tag").on("click", function(){
-        $(".rename-tag__name").each(function(){
+        var this_parent = $(this).parent();
+        var parent = $(this_parent).parent();
+        var child_span = $(parent).find("table tbody tr td span")
+        $(child_span).each(function(){
             var text = $(this).text()
         	$(this).replaceWith($('<input value="' + text + '"/>').html($(this).html()));
         });
