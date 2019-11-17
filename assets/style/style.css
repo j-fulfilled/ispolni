@@ -2909,6 +2909,12 @@ header {
   padding-left: 12px;
 }
 
+.personal-info__table table tr td input {
+  width: 100%;
+  display: block;
+  color: #BDBDBD;
+}
+
 .personal-info__table .download-info__text {
   margin-bottom: 26px;
 }

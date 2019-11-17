@@ -628,7 +628,26 @@ $(document).ready(function () {
           }    
       })
       
+
+
+
+
+      $(".rename-tag").on("click", function(){
+        $(".rename-tag__name").each(function(){
+            var text = $(this).text()
+        	$(this).replaceWith($('<input value="' + text + '"/>').html($(this).html()));
+        });
+      })
+
+
+
+
     //  ================= -PROFILE-JS-END- =================
+
+
+
+
+
 
 
 })

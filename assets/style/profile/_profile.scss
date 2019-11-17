@@ -66,6 +66,11 @@
         &:not(:first-child) {
           padding-left: 12px;
         }
+        input{
+          width: 100%;
+          display: block;
+          color: $color-light;
+        }
       }
     }
   }
